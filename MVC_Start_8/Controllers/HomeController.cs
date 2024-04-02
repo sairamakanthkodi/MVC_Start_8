@@ -60,17 +60,22 @@ public class HomeController : Controller
     /// <returns>View that will display the chart</returns>
     public ViewResult DemoChart()
     {
-        string[] ChartLabels = new string[] { "Africa", "Asia", "Europe", "Latin America", "North America" };
-        int[] ChartData = new int[] { 2478, 5267, 734, 784, 433 };
+        string[] ChartLabels = new string[] { "Africa", "Asia", "Europe", "Latin America", "North America" , "Test 1" };
+        int[] ChartData = new int[] { 2478, 5267, 734, 784, 433 , 6000};
 
         ChartModel Model = new ChartModel
         {
             ChartType = "bar",
             Labels = String.Join(",", ChartLabels.Select(d => "'" + d + "'")),
             Data = String.Join(",", ChartData.Select(d => d)),
-            Title = "Predicted world population (millions) in 2050"
+            Title = "Predicted world population (millions) in 2050 added test"
         };
 
         return View(Model);
+    }
+
+    public ViewResult DIS()
+    {
+        return View();
     }
 }
