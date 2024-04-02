@@ -1,7 +1,7 @@
 # MVC_Start
 Starting point for an MVC Core project
 
-This is a usable starting template for an MVC core web application project that Microsoft should have provided with Visual Studio. This updates the empty MVC core web application template with the following changes. Tested with Visual Studio 15.5.4: 
+This is a usable starting template for an MVC core web application project that Microsoft should have provided with Visual Studio. This updates the empty MVC core web application template with the following changes. Tested with Visual Studio: 
 
 Added folder hierarchy to wwwroot folder - css, img, js, lib
 
